@@ -1,24 +1,44 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Lecture from './Lecture.jsx';
+import Game from './Game.jsx';
+
+
+
+function Debby(){
+
+  return(
+    <div>
+    <p>I love to code. It gives me so much joy when i code</p>
+  </div>
+  );
+
+}
+
+
+
+function School(){
+  return(
+    <>
+    <h1>All Students Are Welcomed.</h1>
+    <p>The Best Time To Learn Is Now.</p>
+    </>
+  );
+}
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+      <Game/>
+      <Game/>
+      <Game/>
+      <Game/>
+      <Debby/>
+      <School/>
+      <Lecture/>
+   </div>
   );
 }
 
